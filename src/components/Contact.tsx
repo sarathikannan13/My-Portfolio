@@ -29,7 +29,7 @@ export default function Contact({ darkMode }: ContactProps) {
           message: formData.message,
         },
         '8NZXtSAIVrJtSamD_'     // ← replace with your public key
-      )
+      ) 
 
       setSubmitted(true)
       setFormData({ name: '', email: '', subject: '', message: '' })
