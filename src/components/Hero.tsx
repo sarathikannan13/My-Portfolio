@@ -49,7 +49,7 @@ export default function Hero({ darkMode }: HeroProps) {
             </div>
             <div className="flex flex-wrap justify-center md:justify-start gap-4 mb-8">
               <a
-                href="src\assets\Sarathi_resume.pdf" // Replace with your actual resume path or URL
+                href="/Sarathi_resume.pdf" // Replace with your actual resume path or URL
                 download="Sarathi_Kannan_Resume.pdf"
                 className={`flex items-center gap-2 px-6 py-3 rounded-lg ${darkMode
                   ? 'bg-gray-800 hover:bg-gray-700 text-white'
@@ -85,7 +85,7 @@ export default function Hero({ darkMode }: HeroProps) {
             >
               {/* Profile image */}
               <img
-                src="src/assets/sarathi_cout.png"
+                src="/sarathi_cout.png"
                 alt="Sarathi Kannan B"
                 className="w-full h-full rounded-full object-cover border-4 border-white shadow-md"
               />
