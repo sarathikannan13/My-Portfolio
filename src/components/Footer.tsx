@@ -12,9 +12,9 @@ export default function Footer({ darkMode }: FooterProps) {
           <p className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
             © {new Date().getFullYear()} Sarathi Kannan B. All rights reserved.
           </p>
-          <p className={`flex items-center gap-2 text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+          {/* <p className={`flex items-center gap-2 text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
             Built with <Heart size={16} className="text-red-500" /> and modern web technologies
-          </p>
+          </p> */}
         </div>
       </div>
     </footer>

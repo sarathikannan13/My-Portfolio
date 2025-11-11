@@ -47,6 +47,20 @@ export default function Hero({ darkMode }: HeroProps) {
                 Email
               </a>
             </div>
+            <div className="flex flex-wrap justify-center md:justify-start gap-4 mb-8">
+              <a
+                href="src\assets\Sarathi_resume.pdf" // Replace with your actual resume path or URL
+                download="Sarathi_Kannan_Resume.pdf"
+                className={`flex items-center gap-2 px-6 py-3 rounded-lg ${darkMode
+                    ? 'bg-gray-800 hover:bg-gray-700 text-white'
+                    : 'bg-green-600 hover:bg-green-700 text-white'
+                  } shadow-md transition-all`}
+              >
+                <Download size={20} />
+                Download Resume
+              </a>
+            </div>
+
 
             <div className={`flex flex-wrap justify-center md:justify-start gap-4 text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
               <div className="flex items-center gap-2">
