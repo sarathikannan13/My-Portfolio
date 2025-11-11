@@ -52,8 +52,8 @@ export default function Hero({ darkMode }: HeroProps) {
                 href="src\assets\Sarathi_resume.pdf" // Replace with your actual resume path or URL
                 download="Sarathi_Kannan_Resume.pdf"
                 className={`flex items-center gap-2 px-6 py-3 rounded-lg ${darkMode
-                    ? 'bg-gray-800 hover:bg-gray-700 text-white'
-                    : 'bg-green-600 hover:bg-green-700 text-white'
+                  ? 'bg-gray-800 hover:bg-gray-700 text-white'
+                  : 'bg-green-600 hover:bg-green-700 text-white'
                   } shadow-md transition-all`}
               >
                 <Download size={20} />
@@ -74,11 +74,32 @@ export default function Hero({ darkMode }: HeroProps) {
             </div>
           </div>
 
-          <div className="flex-shrink-0">
-            <div className={`w-64 h-64 sm:w-80 sm:h-80 rounded-full ${darkMode ? 'bg-gradient-to-br from-blue-600 to-purple-600' : 'bg-gradient-to-br from-blue-500 to-purple-500'} flex items-center justify-center text-white text-6xl sm:text-8xl font-bold shadow-2xl`}>
-              SK
+          <div className="flex-shrink-0 relative">
+            {/* Outer gradient border */}
+            <div
+              className={`relative w-64 h-64 sm:w-80 sm:h-80 rounded-full p-[3px]
+      ${darkMode
+                  ? 'bg-gradient-to-br from-blue-600 via-purple-700 to-purple-800'
+                  : 'bg-gradient-to-br from-blue-400 via-purple-500 to-pink-500'}
+      shadow-lg`}
+            >
+              {/* Profile image */}
+              <img
+                src="src/assets/sarathi_cout.png"
+                alt="Sarathi Kannan B"
+                className="w-full h-full rounded-full object-cover border-4 border-white shadow-md"
+              />
             </div>
+
+            {/* Subtle ambient glow */}
+            <div
+              className={`absolute inset-0 rounded-full blur-2xl opacity-20 -z-10
+      ${darkMode
+                  ? 'bg-gradient-to-br from-blue-600 via-purple-700 to-pink-700'
+                  : 'bg-gradient-to-br from-blue-300 via-purple-400 to-pink-400'}`}
+            ></div>
           </div>
+
         </div>
       </div>
     </section>
