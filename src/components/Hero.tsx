@@ -85,7 +85,7 @@ export default function Hero({ darkMode }: HeroProps) {
             >
               {/* Profile image */}
               <img
-                src="/sarathi_cout.png"
+                src="/IMG-20251112-WA0009.jpg"
                 alt="Sarathi Kannan B"
                 className="w-full h-full rounded-full object-cover border-4 border-white shadow-md"
               />
